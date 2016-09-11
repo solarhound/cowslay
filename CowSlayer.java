@@ -20,7 +20,7 @@ public class CowSlayer extends PollingScript<ClientContext> {
 
 	@Override
 	public void start(){
-		taskList.addAll(Arrays.asList(new cowslay(ctx)));	
+		taskList.addAll(Arrays.asList(new Looting(ctx),new EatBeef(ctx),new KillCow(ctx)));	
 	}
 	
 	@Override
